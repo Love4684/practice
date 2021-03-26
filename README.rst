@@ -4,7 +4,8 @@
    :depth: 3
    
 C++ OOPs Concepts
-.........
+===============================================================================
+
 
 oops is about creating objects that contain both data and functions.
 
@@ -14,14 +15,13 @@ Object
 Any entity that has state and behavior is known as an object. For example: chair, pen, table, keyboard, bike etc. It can be physical and logical.
 
 Class
-.........
+------------
 
 A class is like a blueprint for an object. It is a user-defined data type, which holds its own data members and member functions.
 
 Inheritance
 ------------
 
-===============================================================================
 When one object acquires all the properties and behaviours of parent object i.e. known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
 
 Polymorphism
