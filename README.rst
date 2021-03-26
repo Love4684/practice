@@ -112,6 +112,8 @@ Types of Class Member Functions in C++
 ------------
 Member functions are the functions, which have their declaration inside the class definition. The definition of member functions can be inside or outside the definition of class.
 
+.. code:: c++
+
       class Cube
       {
           public:
