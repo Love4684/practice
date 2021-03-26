@@ -110,4 +110,24 @@ protected - members cannot be accessed from outside the class, however, they can
 
 Types of Class Member Functions in C++
 ------------
+Member functions are the functions, which have their declaration inside the class definition. The definition of member functions can be inside or outside the definition of class.
 
+      class Cube
+      {
+          public:
+          int side;
+          int getVolume();
+      };
+
+      // member function defined outside class definition using the scope resolution ::
+      int Cube :: getVolume()
+      {
+          return side*side*side;
+      }
+
+      int main()
+      {
+          Cube C1;
+          C1.side = 4;    // setting side value
+          cout<< "Volume of cube C1 = "<< C1.getVolume();
+      }
