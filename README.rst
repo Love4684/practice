@@ -134,3 +134,155 @@ Member functions are the functions, which have their declaration inside the clas
           C1.side = 4;    // setting side value
           cout<< "Volume of cube C1 = "<< C1.getVolume();
       }
+      
+      
+1) Simple functions:
+...................
+
+These are the basic member function, which doesn’t have any special keyword like static etc as a prefix.
+
+.. code:: c++
+
+      return_type functionName(parameter_list)
+      {
+      function body;
+      }
+      
+2) Static functions:
+....................
+
+Static is a keyword which can be used with data members as well as the member functions. These functions work for the class as whole rather than for a particular object of a class.
+
+It can be called using the object and the direct member access . operator. But, its more typical to call a static member function by itself, using class name and scope resolution :: operator.
+
+.. code:: c++
+
+      class X
+      {
+       public:
+       static void f(){};
+      };
+
+      int main()
+      {
+       X::f();   // calling member function directly with class name
+      }
+      
+3) Const functions: 
+...................
+
+A function becomes const when const keyword is used in function’s declaration. The idea of const functions is not to allow them to modify the object on which they are called.
+
+.. code:: c++
+
+      #include<iostream>
+      using namespace std;
+
+      class Test {
+          int value;
+      public:
+          Test(int v = 0) {value = v;}
+
+          // We get compiler error if we add a line like "value = 100;"
+          // in this function.
+          int getValue() const {return value;}  
+      };
+      
+4) Inline functions: 
+....................
+
+C++ provides inline functions to reduce the function call overhead. An inline function is a function that is expanded in line when it is called. When the inline function is called whole code of the inline function gets inserted or substituted at the point of inline function call. This substitution is performed by the C++ compiler at compile time. Inline function may increase efficiency if it is small.
+
+Some Important points about Inline Functions
+
+We must keep inline functions small, small inline functions have better efficiency.
+
+Inline functions do increase efficiency, but we should not make all the functions inline. Because if we make large functions inline, it may lead to code bloat, and might affect the speed too.
+
+Hence, it is adviced to define large functions outside the class definition using scope resolution :: operator, because if we define such functions inside class definition, then they become inline automatically.
+
+Inline functions are kept in the Symbol Table by the compiler, and all the call for such functions is taken care at compile time.
+
+.. code:: c++
+
+      #include <iostream>
+      using namespace std;
+      inline int cube(int s)
+      {
+         return s*s*s;
+      }
+      int main()
+      {
+         cout << "The cube of 3 is: " << cube(3) << "\n";
+         return 0;
+      } //Output: The cube of 3 is: 27
+      
+5) Friend function: 
+....................
+
+If a function is defined as a friend function in C++, then the protected and private data of a class can be accessed using the function. 
+For accessing the data, the declaration of a friend function should be done inside the body of a class starting with the keyword friend.
+A friend function of a class is defined outside that class' scope but it has the right to access all private and protected members of the class.
+
+.. code:: c++
+
+      #include <iostream>    
+      using namespace std;    
+      class Box    
+      {    
+          private:    
+              int length;    
+          public:    
+              Box(): length(0) { }    
+              friend int printLength(Box); //friend function    
+      };    
+      int printLength(Box b)    
+      {    
+         b.length += 10;    
+          return b.length;    
+      }    
+      int main()    
+      {    
+          Box b;    
+          cout<<"Length of box: "<< printLength(b)<<endl;    
+          return 0;    
+      }    
+
+C++ Friend class
+................
+
+A friend class can access both private and protected members of the class in which it has been declared as friend.
+
+.. code:: c++
+
+      #include <iostream>  
+
+      using namespace std;  
+
+      class A  
+      {  
+          int x =5;  
+          friend class B;           // friend class.  
+      };  
+      class B  
+      {  
+        public:  
+          void display(A &a)  
+          {  
+              cout<<"value of x is : "<<a.x;  
+          }  
+      };  
+      int main()  
+      {  
+          A a;  
+          B b;  
+          b.display(a);  
+          return 0;  
+      }  
+      
+When we make a class as friend, all its member functions automatically become friend functions.
+
+Friend Functions is a reason, why C++ is not called as a pure Object Oriented language. Because it violates the concept of Encapsulation.
+
+
+
