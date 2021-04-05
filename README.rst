@@ -3,13 +3,14 @@
    :local:
    :depth: 3
    
-C++ OOPs Concepts
+Bit Manipulation Algorithms
 ===============================================================================
 
+Binary Number System
+--------------------
 
-oops is about creating objects that contain both data and functions.
+in decimal
 
-Object
-------------
+
 
 
