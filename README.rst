@@ -28,7 +28,7 @@ in binary
  
  
 
-span rows
+s
 
     ===== ========= =====
     Table Headings  Here
