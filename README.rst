@@ -25,28 +25,11 @@ in binary
 
 .. image:: https://github.com/Love4684/practice/blob/main/media/4.jpg
 
- this::
+ 
+ 
+ Simple tables are easier, but cells must be on a single line and cannot
+span rows::
 
-      This is paragraph text *before* the table.
-
-      +----------+---------------------------------------------------------+
-      | Column 1 | Column 2                                                |
-      +==========+=========================================================+
-      | Foo      | Put two (or more) spaces as a field separator.          |
-      +----------+---------------------------------------------------------+
-      | Bar      | Even very very long lines like these are fine, as long  |
-      |          | as you do not put in line endings here.                 |
-      +----------+---------------------------------------------------------+
-      | Qux      | This is the last line.                                  |
-      +----------+---------------------------------------------------------+
-
-      This is paragraph text *after* the table.   
- 
- 
- 
- 
- ``::``.
-  
     ===== ========= =====
     Table Headings  Here
     --------------- -----
@@ -57,5 +40,3 @@ in binary
     cell  cell      row
     column spanning spans
     =============== =====
-
------
