@@ -27,8 +27,8 @@ in binary
 
  
  
- Simple tables are easier, but cells must be on a single line and cannot
-span rows::
+
+span rows
 
     ===== ========= =====
     Table Headings  Here
