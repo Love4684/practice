@@ -229,3 +229,10 @@ Find value of k-th bit in binary representation
          cout << y;
           return 0;
       }
+
+output
+
+.. code:: c++
+
+      2
+      1
