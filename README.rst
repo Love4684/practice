@@ -236,3 +236,24 @@ output
 
       2
       kth bit = 1
+
+Set the K-th bit of a given number
+--------------------
+
+.. code:: c++
+
+      #include <iostream>
+      using namespace std;
+      int main()
+      {
+          int n = 10, k = 3;
+          int x = ((1 << k-1) | n);
+          cout << x;
+          return 0;
+      }
+      
+output
+
+.. code:: c++
+
+      14
