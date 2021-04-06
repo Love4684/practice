@@ -159,3 +159,27 @@ output
       212 << 1 = 424
       212 << 2 = 848
       212 << 3 = 1696
+
+Check if a Number is Odd or Even using Bitwise Operators.
+--------------------
+
+.. code:: c++
+
+      #include <iostream>
+      using namespace std;
+      int main()
+      {int n=5;
+     
+     // As we know bitwise AND Operation of the Number by 1 will be 1, If it is odd because the last bit will be already set. Otherwise it will give 0 as output
+     
+      ((n&1)==0) ? cout<<"even " : cout<<"odd ";
+     
+     // As we know bitwise XOR Operation of the Number by 1 increment the value of the number by 1 if the number is even otherwise
+     // it decrements the value of the number by 1 if the value is odd.
+     
+      ((n ^ 1) == (n + 1)) ? cout<<"even " : cout<<"odd ";
+      
+      // As we know bitwise OR Operation of the Number by 1 increment the value of the number by 1 if the number is even otherwise it will remain unchanged.
+     
+      ((n | 1) > n) ? cout<<"even " : cout<<"odd ";
+      }
