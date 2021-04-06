@@ -76,3 +76,8 @@ Now, write remainder from bottom to up (in reverse order), this will be
       
       
 Now, write these resultant integer part, this will be 0.11010 which is equivalent binary fractional number of decimal fractional 0.8125.
+
+Subtraction of two Binary Numbers(2 - 3)
+--------------------
+
+.. image:: https://github.com/Love4684/practice/blob/main/media/5.png
