@@ -226,7 +226,7 @@ Find value of k-th bit in binary representation
          int x = (n & (1 << (k - 1)));  // value will be zero or non zero 
          cout << x << endl;
          int y = x >> k-1;
-         cout << y;
+         cout << "kth bit = " << y;
           return 0;
       }
 
@@ -235,4 +235,4 @@ output
 .. code:: c++
 
       2
-      1
+      kth bit = 1
