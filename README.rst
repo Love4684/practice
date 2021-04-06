@@ -106,9 +106,10 @@ Consider an integer 35. As per the rule, the bitwise complement of 35 should be 
       
 Output
 
-~(35) = -36
+.. code:: c++
 
-~(-150) = 149
+      ~(35) = -36
+      ~(-150) = 149
 
 Right Shift Operator x >> k
 --------------------
