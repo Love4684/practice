@@ -278,3 +278,30 @@ output
 .. code:: c++
 
       12
+
+Count number of bits to be flipped to convert A to B
+--------------------
+
+.. code:: c++
+
+      #include <iostream>
+      using namespace std;
+      int main()
+      {
+          int a = 10, b = 20;
+          int x = a^b ;
+          int count = 0;
+          while(x > 0)
+          {
+              x &= (x-1);    // counting no of one
+              count ++;
+          }
+          cout << count;
+          return 0;
+      }
+
+output
+
+.. code:: c++
+
+      4
