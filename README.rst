@@ -257,3 +257,24 @@ output
 .. code:: c++
 
       14
+
+clear nth bit of a number
+--------------------
+
+.. code:: c++
+
+      #include <iostream>
+      using namespace std;
+      int main()
+      {
+          int n = 13, k = 1;
+          int x = (n & (~(1 << k-1)));
+          cout << x;
+          return 0;
+      }
+
+output 
+
+.. code:: c++
+
+      12
