@@ -113,14 +113,14 @@ Output
 Right Shift Operator x >> k
 --------------------
 
-remove k bit from left
+remove k bit from left(Ex: One bit Right Shift 0011 >> 1 = 001)
 
 .. image:: https://github.com/Love4684/practice/blob/main/media/7.webp
 
 Left Shift Operator x << k
 --------------------
 
-add k bit zeros from left
+add k bit zeros from left((Ex: One bit left Shift 0011 << 1 = 00110)
 
 .. image:: https://github.com/Love4684/practice/blob/main/media/8.webp
 
