@@ -90,3 +90,21 @@ It is important to note that the bitwise complement of any integer N is equal to
 Consider an integer 35. As per the rule, the bitwise complement of 35 should be -(35 + 1) = -36.
 
 .. image:: https://github.com/Love4684/practice/blob/main/media/6.webp
+
+.. code:: c++
+
+      #include <iostream>
+
+      int main() {
+          int num1 = 35;
+          int num2 = -150;
+          cout << "~(" << num1 << ") = " << (~num1) << endl;
+          cout << "~(" << num2 << ") = " << (~num2) << endl;
+
+          return 0;
+      }
+      
+Output
+
+~(35) = -36
+~(-150) = 149
