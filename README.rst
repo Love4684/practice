@@ -109,3 +109,52 @@ Output
 ~(35) = -36
 
 ~(-150) = 149
+
+Right Shift Operator x >> k
+--------------------
+
+remove k bit from left
+
+.. image:: https://github.com/Love4684/practice/blob/main/media/7.webp
+
+Left Shift Operator x << k
+--------------------
+
+add k bit zeros from left
+
+.. image:: https://github.com/Love4684/practice/blob/main/media/8.webp
+
+.. code:: c++
+
+      #include <iostream>
+
+      int main() {
+          int num = 212, i;
+          cout << "Shift Right:" << endl;
+          for (i = 0; i < 4; i++) {
+              cout << "212 >> " << i << " = " << (212 >> i) << endl;
+          }
+
+          cout << "\nShift Left:" << endl;
+          for (i = 0; i < 4; i++) {
+              cout << "212 << " << i << " = " << (212 << i) << endl;
+          }
+
+          return 0;
+      }
+
+output
+
+.. code:: c++
+
+      Shift Right:
+      212 >> 0 = 212
+      212 >> 1 = 106
+      212 >> 2 = 53
+      212 >> 3 = 26
+
+      Shift Left:
+      212 << 0 = 212
+      212 << 1 = 424
+      212 << 2 = 848
+      212 << 3 = 1696
