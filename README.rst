@@ -212,3 +212,20 @@ output
 .. code:: c++
 
       After Swapping: x =5, y=10
+
+Find value of k-th bit in binary representation
+--------------------
+
+.. code:: c++
+
+      #include <iostream>
+      using namespace std;
+      int main()
+      {
+         int n = 7, k = 2;
+         int x = (n & (1 << (k - 1)));  // value will be zero or non zero 
+         cout << x << endl;
+         int y = x >> k-1;
+         cout << y;
+          return 0;
+      }
