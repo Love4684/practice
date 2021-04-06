@@ -188,3 +188,27 @@ output
 .. code:: c++
 
       odd odd odd
+
+swap two numbers without using a temporary variable
+--------------------
+
+.. code:: c++
+
+      #include <bits/stdc++.h>
+      using namespace std;
+
+      int main()
+      {
+          int x = 10, y = 5;
+          x = x ^ y; 
+          y = x ^ y; 
+          x = x ^ y;
+          cout << "After Swapping: x =" << x << ", y=" << y;
+          return 0;
+      }
+      
+output
+
+.. code:: c++
+
+      After Swapping: x =5, y=10
