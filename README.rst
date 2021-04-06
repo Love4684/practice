@@ -81,3 +81,12 @@ Subtraction of two Binary Numbers(2 - 3)
 --------------------
 
 .. image:: https://github.com/Love4684/practice/blob/main/media/5.png
+
+Bitwise Complement Operator
+--------------------
+
+It is important to note that the bitwise complement of any integer N is equal to -(N + 1). For example,
+
+Consider an integer 35. As per the rule, the bitwise complement of 35 should be -(35 + 1) = -36.
+
+.. image:: https://github.com/Love4684/practice/blob/main/media/6.webp
