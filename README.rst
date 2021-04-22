@@ -74,3 +74,29 @@ SET TRANSACTION–specify characteristics for the transaction.
 
 
 
+What is normalization?
+===============================================================================
+
+Normalization is used to minimize redundancy and dependency by organizing fields and table of a database. Normalization breaks the table into small partitions
+and then link them using different relationships so that it will avoid the chances of redundancy.
+
+
+First Normal Form (1NF):
+--------------------
+
+This should remove all the duplicate columns from the table. Creation of tables for the related data and identification of unique columns.
+
+Second Normal Form (2NF):
+--------------------
+
+Meeting all requirements of the first normal form. Placing the subsets of data in separate tables and Creation of relationships between the tables using primary keys.
+
+Third Normal Form (3NF):
+--------------------
+
+This should meet all requirements of 2NF. Removing the columns which are not dependent on primary key constraints.
+
+Fourth Normal Form (4NF):
+--------------------
+
+Meeting all the requirements of third normal form and it should not have multi- valued dependencies.
